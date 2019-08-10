@@ -8,6 +8,7 @@ class DeviceList extends Component {
     super(props);
     this.state = { selected : 0 };
     this.deviceList = devices || [];
+    
     if (this.props.setName) {
       this.props.setName(this.deviceList[0].name);
     }
@@ -141,6 +142,7 @@ class DeviceDetail extends Component {
     )
   }
 }
+
 class App extends Component {
   constructor(props) {
     super(props);
