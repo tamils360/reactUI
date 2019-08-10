@@ -7,13 +7,16 @@ img {
   display: block;
 }
 
-#deviceList::-webkit-scrollbar, #deviceDesc::-webkit-scrollbar { display: none; }
+#deviceList::-webkit-scrollbar, #deviceDesc::-webkit-scrollbar { 
+  display: none; 
+}
 
 #deviceList {
   height: 100%;
   width: 30%;
   float: left;
   overflow: scroll;
+  -ms-overflow-style: none;
 }
 
 #deviceListWrap {
@@ -41,7 +44,7 @@ img {
   padding: 20px 0;
   margin-left: 70px;
   background: #FEFFFE;
-  box-shadow: 0 21px 21px 0 rgba(0,0,0,0.15)
+  box-shadow: 0 21px 21px 0 rgba(0,0,0,0.10)
 }
 
 .active .nameCont {
@@ -97,7 +100,7 @@ span.devicePlace {
   right: -50px;
   padding: 3px;
   background-image: linear-gradient(-135deg, #DEFFC9 0%, #A3F8FF 100%);
-  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.10);
   display: none;
 }
 
@@ -108,6 +111,7 @@ span.devicePlace {
 #deviceDesc {
   height: 100%;
   overflow: scroll;
+  -ms-overflow-style: none;
 }
 
 #deviceDescWrap {
@@ -150,7 +154,7 @@ span.devicePlace {
   float: right;
   padding: 5px;
   background: #000000;
-  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.10);
   border-radius: 60px;
   width: 30px;
   height: 15px;
@@ -267,7 +271,7 @@ span.devicePlace {
 
 .modeCont.selected {
   background-image: linear-gradient(-270deg, #AD6BFF 0%, #74BCF7 100%);
-  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
   color: #FFFFFF;
 }
 

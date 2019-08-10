@@ -1,38 +1,13 @@
 import React, { Component } from "react";
 import { CircleSlider } from "react-circle-slider";
+import { devices, colors, modes } from './data';
 import './App.css';
 
 class DeviceList extends Component {
   constructor(props) {
     super(props);
     this.state = { selected : 0 };
-    this.deviceList = [
-      {
-        name: 'Noria AC',
-        place: 'In Bedroom',
-        image: 'assets/ac.png'
-      },
-      {
-        name: 'Door Lock',
-        place: 'In Home office',
-        image: 'assets/lock.png'
-      },
-      {
-        name: 'Thermostat',
-        place: 'In Bedroom',
-        image: 'assets/thermostat.png'
-      },
-      {
-        name: 'LG TV',
-        place: 'In  Living room',
-        image: 'assets/tv.png'
-      },
-      {
-        name: 'Bed Lamp',
-        place: 'In Bedroom',
-        image: 'assets/lamp.png'
-      }
-    ];
+    this.deviceList = devices || [];
     if (this.props.setName) {
       this.props.setName(this.deviceList[0].name);
     }
@@ -41,7 +16,6 @@ class DeviceList extends Component {
   makeActive = (event) => {
     let selectedIdx = event.currentTarget.dataset.idx;
     let selectedName = event.currentTarget.dataset.name;
-    console.log(event.currentTarget.dataset);
     this.setState({ 'selected' : selectedIdx });
 
     if (this.props.setName) {
@@ -73,26 +47,9 @@ class DeviceList extends Component {
 class DeviceDetail extends Component {
   constructor(props) {
     super(props);
-    this.state = { colorIdx : 0, modeIdx : 0, power : 50, switch : true }
-    this.colors = ['#FF4563', '#8245E6', '#4AC0E0', '#1089EB', '#C791CD'];
-    this.modes = [
-      {
-        name : 'Morning',
-        dk_image : 'assets/morning-dk.png',
-        wh_image : 'assets/morning-wh.png',
-        power : '50'
-      },
-      {
-        name : 'Day',
-        image : 'assets/day-dk.png',
-        power : '30'
-      },
-      {
-        name : 'Night',
-        image : 'assets/night-dk.png',
-        power : '100'
-      }
-    ];
+    this.state = { colorIdx : 0, modeIdx : 0, power : 50, switch : true };
+    this.colors = colors || [];
+    this.modes = modes || [];
   }
 
   selectColor = (event) => {
