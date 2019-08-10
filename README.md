@@ -14,5 +14,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Quick Demo
 
-For quick start, You can see in this live and interactive demo:
+For quick start, You can see in this live and interactive demo: <br><br>
 [![Edit react-assignment](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/tamils360/reactUI/tree/master/?view=preview)
