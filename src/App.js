@@ -129,6 +129,8 @@ class DeviceDetail extends Component {
                   size={160}
                   stepSize={2}
                   showTooltip={true}
+                  knobRadius={10}
+                  progressWidth={5}
                   gradientColorFrom="#AC6DFF"
                   gradientColorTo="#76B9F7"
                   knobColor="#AD6BFF"
@@ -139,7 +141,6 @@ class DeviceDetail extends Component {
     )
   }
 }
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -162,7 +163,6 @@ class App extends Component {
       </div>
     )
   }
-
 }
 
 export default App;
