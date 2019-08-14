@@ -17,6 +17,7 @@ class DeviceList extends Component {
   makeActive = (event) => {
     let selectedIdx = event.currentTarget.dataset.idx;
     let selectedName = event.currentTarget.dataset.name;
+    document.getElementById("deviceDesc").scrollTop = 0;
     this.setState({ 'selected' : selectedIdx });
 
     if (this.props.setName) {

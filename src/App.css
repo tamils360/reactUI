@@ -112,6 +112,7 @@ span.devicePlace {
   height: 100vh;
   overflow: scroll;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
 #deviceDescWrap {
