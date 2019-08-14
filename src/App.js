@@ -160,6 +160,7 @@ class App extends Component {
       <div id="deviceWrapper">
         <div id="deviceList"> 
           <DeviceList setName={this.selectDevice} />
+          <div className="backIcon"> <img src="assets/back-wh.png" alt="backImg" /> </div>
         </div>
         <div id="deviceDesc">
           <DeviceDetail deviceName={this.state.deviceName} />
