@@ -26,11 +26,13 @@ class DeviceList extends Component {
 
   renderAllDevices = (devList) => {
     return devList.map((device, index) => {
-      return (<div id={'item' + index} className={"itemCont" + ((this.state.selected == index)? " active" : "")} data-idx={index} data-name={device.name} onClick={this.makeActive}>
+      return (
+        <div id={'item' + index} className={"itemCont" + ((this.state.selected == index)? " active" : "")} data-idx={index} data-name={device.name} onClick={this.makeActive}>
           <div className="nameCont"> <span className="deviceName">{device.name}</span> <br/> <span className="devicePlace">{device.place}</span> </div>
           <div className="imageCont"> <img src={device.image} alt={'device' + index} /> </div>
           <div className="arrowCont"> <img src="assets/chevron-right.png" alt="chevron" /> </div>
-      </div>)
+        </div>
+      )
     })
   }
 
@@ -70,9 +72,9 @@ class DeviceDetail extends Component {
 
   renderAllColors = (colorList) => {
     return colorList.map((color, index) => {
-      return (
+      return (<div className="cbWrap">
         <label className="container"> <input type="checkbox" /> <span className={"checkmark" + ((this.state.colorIdx == index)? " clicked" : "")} style={{background: color}} data-idx={index} onClick={this.selectColor}></span> </label>
-      )
+      </div>)
     })
   }
 
@@ -130,8 +132,8 @@ class DeviceDetail extends Component {
                   size={160}
                   stepSize={2}
                   showTooltip={true}
-                  knobRadius={10}
-                  progressWidth={5}
+                  knobRadius={12}
+                  progressWidth={8}
                   gradientColorFrom="#AC6DFF"
                   gradientColorTo="#76B9F7"
                   knobColor="#AD6BFF"

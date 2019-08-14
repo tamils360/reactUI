@@ -1,5 +1,10 @@
 const devices = [
     {
+      name: 'Bed Lamp',
+      place: 'In Bedroom',
+      image: 'assets/lamp.png'
+    },
+    {
       name: 'Noria AC',
       place: 'In Bedroom',
       image: 'assets/ac.png'
@@ -10,19 +15,14 @@ const devices = [
       image: 'assets/lock.png'
     },
     {
-      name: 'Thermostat',
-      place: 'In Bedroom',
-      image: 'assets/thermostat.png'
-    },
-    {
       name: 'LG TV',
       place: 'In  Living room',
       image: 'assets/tv.png'
     },
     {
-      name: 'Bed Lamp',
+      name: 'Thermostat',
       place: 'In Bedroom',
-      image: 'assets/lamp.png'
+      image: 'assets/thermostat.png'
     }
 ];
 

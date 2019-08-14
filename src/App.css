@@ -1,6 +1,5 @@
-#deviceWrapper {
-  max-width: 1024px;
-  margin: auto;
+body {
+  margin: 0;
 }
 
 img {
@@ -12,24 +11,22 @@ img {
 }
 
 #deviceList {
-  height: 100%;
-  width: 30%;
+  height: 99vh;
+  width: 405px;
   float: left;
   overflow: scroll;
   -ms-overflow-style: none;
 }
 
 #deviceListWrap {
-  width: 90%;
-  padding-top: 12%;
-  /* background-image: linear-gradient(180deg, rgba(173,107,255,0.7) 0%, rgba(116,188,247,0.7) 100%); */
+  width: 380px;
+  padding-top: 60px;
   background-image: linear-gradient(180deg, #AD6BFF 0%, #74BCF7 100%)
 }
 
 .itemCont {
-  width: 75%;
-  height: 120px;
-  margin: 10px auto;
+  width: 300px;
+  margin: 50px 40px;
   position: relative;
   cursor: pointer;
 }
@@ -39,68 +36,70 @@ img {
 }
 
 .nameCont {
-  width: 70%;
-  height: 50px;
-  padding: 20px 0;
-  margin-left: 70px;
+  width: 200px;
+  height: 40px;
+  padding: 40px 0;
+  margin-left: 100px;
   background: #FEFFFE;
-  box-shadow: 0 21px 21px 0 rgba(0,0,0,0.10)
+  box-shadow: 0 21px 21px 0 rgba(0,0,0,0.15)
 }
 
 .active .nameCont {
   margin: 0;
-  width: 90%;
+  width: 230px;
+  height: 40px;
+  padding: 45px 0;
 }
 
 .nameCont span {
-  padding-left: 25%;
+  padding-left: 50px;
 }
 
 .active .nameCont span {
-  padding-left: 15%;
+  padding-left: 40px;
 }
 
 span.deviceName {
   font-family: Montserrat-Bold;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 span.devicePlace {
   font-family: Montserrat-Regular;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 25px;
   color: #666;
 }
 
 .imageCont {
   position: absolute;
-  top: -10px;
+  bottom: 15px;
 }
 
 .active .imageCont {
-  right: -40px;
-  top: -25px;
+  right: -50px;
+  bottom: 15px;
 }
 
 .imageCont img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   background: #d8bfd8;
 }
 
 .active .imageCont img {
-  width: 100px;
-  height: 100px; 
+  width: 140px;
+  height: 140px; 
 }
 
 .arrowCont {
   position: absolute;
-  bottom: 30px;
-  right: -50px;
-  padding: 3px;
+  bottom: -5px;
+  right: -65px;
+  padding: 8px;
   background-image: linear-gradient(-135deg, #DEFFC9 0%, #A3F8FF 100%);
-  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.15);
   display: none;
 }
 
@@ -109,16 +108,17 @@ span.devicePlace {
 }
 
 #deviceDesc {
-  height: 100%;
+  height: 99vh;
   overflow: scroll;
   -ms-overflow-style: none;
 }
 
 #deviceDescWrap {
-  padding: 3%;
+  padding: 50px 60px;
 }
 
-#titleWrap {
+#titleWrap, #nameWrap {
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -129,35 +129,30 @@ span.devicePlace {
 }
 
 #devicesTitle {
-  font-size: 30px;
-  letter-spacing: 3px;
+  font-size: 48px;
+  letter-spacing: 8px;
 }
 
 #plusCont {
   float: right;
-  padding: 5px;
+  padding: 13px;
   cursor: pointer;
   background-image: linear-gradient(-135deg, #DEFFC9 0%, #A3F8FF 100%);
 }
 
-#nameWrap {
-  padding: 20px 0;
-  overflow: hidden;
-}
-
 #deviceName {
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 32px;
+  letter-spacing: 5px;
 }
 
 #switchCont {
   float: right;
   padding: 5px;
   background: #000000;
-  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.12);
   border-radius: 60px;
-  width: 30px;
-  height: 15px;
+  width: 32px;
+  height: 14px;
   cursor: pointer;
 }
 
@@ -166,7 +161,7 @@ span.devicePlace {
   width: 15px;
   margin: auto 0;
   background: #FFFFFF;
-  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.12);
   border-radius: 60px;
 }
 
@@ -175,10 +170,10 @@ span.devicePlace {
 } 
 
 .sectionWrap {
-  margin: 20px 0;
+  margin: 30px 0;
   border-top: 1px dotted #AC6CFF;
   position: relative;
-  min-height: 70px;
+  min-height: 100px;
 }
 
 .disabled .sectionWrap {
@@ -188,18 +183,18 @@ span.devicePlace {
   
 .sectionTitle {
   font-family: Montserrat-Bold;
-  font-size: 12px;
+  font-size: 15px;
   color: #AC6CFF;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   background: #fff;
   padding: 0 10px;
   position: absolute;
-  top: -8px;
+  top: -10px;
 }
 
 .sectionCont.colors {
-  margin: 30px 5px;
+  margin: 50px 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -255,15 +250,15 @@ span.devicePlace {
 }
 
 .sectionCont {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .modeCont {
-  height: 40px;
+  height: 50px;
   font-family: Montserrat-SemiBold;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.6px;
-  line-height: 20px;
+  line-height: 25px;
   margin-bottom: 5px;
   cursor: pointer;
   overflow: hidden;
@@ -271,13 +266,13 @@ span.devicePlace {
 
 .modeCont.selected {
   background-image: linear-gradient(-270deg, #AD6BFF 0%, #74BCF7 100%);
-  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.12);
   color: #FFFFFF;
 }
 
 .modeCont span {
   float: left;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .modeCont img, .arrowCont img {
@@ -301,32 +296,36 @@ img.white, .selected img.black {
   display: none;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  #deviceList {
+    width: 245px;
+  }
+
+  #deviceListWrap {
+    width: 210px;
+    padding-top: 120px;
+  }
+
   .itemCont {
-    margin: 20%;
+    width: 120px;
+    height: 120px;
+    margin-top: 60px;
   }
 
   .nameCont {
-    width: 90px;
-    height: 70px;
-    padding: 40px 0 0 10px;
+    width: 110px;
+    height: 20px;
+    padding: 100px 0 0 10px;
     margin-left: 15px;
   }
 
    .active .nameCont {
-    margin: 35px;
-    width: 90px;
-    /* display: none; */
-  }
-
-  .active .nameCont span {
-     padding-left: 0;
+    display: none;
   }
   
   span.deviceName {
     position: absolute;
-    bottom: 15px;
-    font-size: 10px;
+    font-size: 11px;
     padding-left: 0;
   }
   
@@ -335,12 +334,53 @@ img.white, .selected img.black {
   }
 
   .imageCont {
-    top: -15px;
+    bottom: 30px;
   }
 
   .active .imageCont {
-    right: -20px;
-    top: -35px;
+    right: -65px;
+  }
+
+  .arrowCont {
+    right: -80px;
+  }
+
+  #deviceDescWrap {
+    padding: 30px;
+  }
+
+  #titleWrap, #nameWrap {
+    padding: 40px 0;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #deviceList {
+    width: 185px;
+  }
+
+  #deviceListWrap {
+    width: 150px;
+    padding-top: 120px;
+  }
+
+  .itemCont {
+    margin: 40px 20px;
+  }
+
+  .nameCont {
+    width: 90px;
+    padding: 90px 0 0 10px;
+    margin: auto;
+  }
+
+  .imageCont {
+    bottom: 40px;
+  }
+
+  .active .imageCont {
+    right: -25px;
   }
 
   .imageCont img {
@@ -349,73 +389,44 @@ img.white, .selected img.black {
   }
 
   .active .imageCont img {
-      width: 120px;
-      height: 120px;
+    width: 120px;
+    height: 120px;
   }
 
   .arrowCont {
-      right: -25px;
-      bottom: 20px;
-      padding: 0;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  #deviceList {
-    width: 40%;
-  }
-
-  #deviceListWrap {
-    padding-top: 30%;
+    right: -40px;
   }
 
   #deviceDescWrap {
-    padding: 10% 3%;
+    padding: 10px;
   }
 
-  .itemCont {
-    margin: 25% 10%;
+  #titleWrap {
+    padding: 10px 0 60px;
   }
 
-  .nameCont {
-    width: 85%;
-    margin: 15%;
+  #devicesTitle {
+    font-size: 40px;
+    letter-spacing: 7px;
+    position: absolute;
+    top: 70px;
+    left: 80px;
   }
 
-  .active .nameCont {
-    margin: 2%;
-    width: 85%;
-    /* display: none; */
+  #plusCont {
+    padding: 0;
+    background: none;
   }
 
-  .active .imageCont {
-    right: -25px;
-    top: -25px;
-  }
-
-  .active .imageCont img {
-    width: 110px;
-    height: 110px;
-  }
-
-  .arrowCont {
-    right: -35px;
-  }
-
-  span.modeImg {
-    width: 30%;
-  }
-
-  span.modeName {
-    width: 50%;
-  }
-
-  span.modePower {
-    display: none;
+  #nameWrap {
+    padding: 45px 0 35px; 
   }
 
   #deviceName {
-    font-size: 18px;
+    font-size: 25px;
+    width: 75%;
+    padding-top: 25px;
+    letter-spacing: 3px;
   }
 
   #switchCont {
@@ -430,8 +441,19 @@ img.white, .selected img.black {
   }
 
   .sectionTitle {
-    font-size: 10px;
+    font-size: 11px;
     top: -7px;
+  }
+
+  .sectionCont.colors {
+    margin: 40px 5px 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .cbWrap {
+    width: 33%;
+    height: 60px;
   }
 
   .checkmark.clicked {
@@ -444,11 +466,20 @@ img.white, .selected img.black {
     top: 7px;
   }
 
-  #plusCont {
-    padding: 0;
+  span.modeImg { 
+    width: 25%;
+  }
+
+  span.modeName {
+    width: 50%;
+  }
+
+  span.modePower {
+    display: none;
   }
 
   .indensity {
     text-align: center;
   }
+
 }
