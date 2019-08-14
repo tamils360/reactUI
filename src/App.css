@@ -11,7 +11,7 @@ img {
 }
 
 #deviceList {
-  height: 99vh;
+  height: 100vh;
   width: 405px;
   float: left;
   overflow: scroll;
@@ -20,6 +20,7 @@ img {
 
 #deviceListWrap {
   width: 380px;
+  height: fit-content;
   padding-top: 60px;
   background-image: linear-gradient(180deg, #AD6BFF 0%, #74BCF7 100%)
 }
@@ -108,13 +109,13 @@ span.devicePlace {
 }
 
 #deviceDesc {
-  height: 99vh;
+  height: 100vh;
   overflow: scroll;
   -ms-overflow-style: none;
 }
 
 #deviceDescWrap {
-  padding: 50px 60px;
+  padding: 20px 60px;
 }
 
 #titleWrap, #nameWrap {
@@ -124,7 +125,7 @@ span.devicePlace {
 
 .clsTitle {
   float: left;
-  font-family: Montserrat-Bold;
+  font-family: Montserrat-ExtraBold;
   text-transform: uppercase;
 }
 
@@ -153,6 +154,7 @@ span.devicePlace {
   border-radius: 60px;
   width: 32px;
   height: 14px;
+  margin: 7px 0;
   cursor: pointer;
 }
 
@@ -280,13 +282,13 @@ span.devicePlace {
   height: 24px;
 }
 
-span.modeImg { width: 8%; margin-left: 10px; }
+span.modeImg { width: 10%; margin-left: 10px; }
 
-span.modeName { width: 45%; }
+span.modeName { width: 50%; }
 
-span.modePower { width: 38%; opacity: 0.8; }
+span.modePower { width: 30%; opacity: 0.8; }
 
-span.modeSelect { width: 5%; }
+span.modeSelect { width: 8%; }
 
 img.black, .selected img.white {
   display: block;
@@ -303,7 +305,7 @@ img.white, .selected img.black {
 
   #deviceListWrap {
     width: 210px;
-    padding-top: 120px;
+    padding-top: 90px;
   }
 
   .itemCont {
@@ -346,11 +348,7 @@ img.white, .selected img.black {
   }
 
   #deviceDescWrap {
-    padding: 30px;
-  }
-
-  #titleWrap, #nameWrap {
-    padding: 40px 0;
+    padding: 20px 30px;
   }
 
 }
@@ -358,6 +356,7 @@ img.white, .selected img.black {
 @media screen and (max-width: 767px) {
   #deviceList {
     width: 185px;
+    height: auto;
   }
 
   #deviceListWrap {
@@ -397,6 +396,10 @@ img.white, .selected img.black {
     right: -40px;
   }
 
+  #deviceDesc {
+    height: auto;
+  }
+
   #deviceDescWrap {
     padding: 10px;
   }
@@ -410,7 +413,7 @@ img.white, .selected img.black {
     letter-spacing: 7px;
     position: absolute;
     top: 70px;
-    left: 80px;
+    left: 70px;
   }
 
   #plusCont {
@@ -424,7 +427,7 @@ img.white, .selected img.black {
 
   #deviceName {
     font-size: 25px;
-    width: 75%;
+    width: 68%;
     padding-top: 25px;
     letter-spacing: 3px;
   }
@@ -438,6 +441,10 @@ img.white, .selected img.black {
   #switchButton {
     height: 13px;
     width: 13px;
+  }
+
+  .sectionWrap {
+    margin-right: 10px;
   }
 
   .sectionTitle {
@@ -464,6 +471,10 @@ img.white, .selected img.black {
   .container .checkmark:after {
     left: 13px;
     top: 7px;
+  }
+
+  .modeCont {
+    font-size: 14px;
   }
 
   span.modeImg { 
